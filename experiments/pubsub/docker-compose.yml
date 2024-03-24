@@ -1,0 +1,13 @@
+nginx:
+        build: ./nginx
+        links:
+                - server:server
+        ports:
+                - "80:80"
+server:
+        build: ./server
+        ports:  
+                - "3000:3000"
+                - "3001:3001"
+        environment:
+                - LDREPLAYSPEED=15

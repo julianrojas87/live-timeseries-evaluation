@@ -1,0 +1,21 @@
+TIMESTAMP, STREAM ID, MODE, DATA SIZE (bytes), DATA GENERATED AT, PROXY CACHE, LATENCY (ms)
+2017-12-15T14:29:43.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:42.900Z, --, 482
+2017-12-15T14:29:45.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:44.903Z, --, 805
+2017-12-15T14:29:48.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:46.905Z, --, 1917
+2017-12-15T14:29:49.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:48.908Z, --, 498
+2017-12-15T14:29:50.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:50.911Z, --, 95
+2017-12-15T14:29:52.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:52.913Z, --, 120
+2017-12-15T14:29:55.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:54.915Z, --, 110
+2017-12-15T14:29:57.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:56.918Z, --, 128
+2017-12-15T14:29:59.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:29:58.921Z, --, 503
+2017-12-15T14:30:01.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:00.924Z, --, 558
+2017-12-15T14:30:03.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:02.927Z, --, 588
+2017-12-15T14:30:05.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:04.928Z, --, 669
+2017-12-15T14:30:07.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:06.930Z, --, 817
+2017-12-15T14:30:09.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:08.932Z, --, 493
+2017-12-15T14:30:10.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:10.935Z, --, 39
+2017-12-15T14:30:13.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:12.938Z, --, 231
+2017-12-15T14:30:14.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:14.939Z, --, 121
+2017-12-15T14:30:16.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:16.941Z, --, 101
+2017-12-15T14:30:19.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:18.944Z, --, 583
+2017-12-15T14:30:21.000Z, http://192.168.43.120/stream/websocket, WebSocket, 1233, 2017-12-15T14:30:20.945Z, --, 623

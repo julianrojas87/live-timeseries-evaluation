@@ -1,0 +1,20 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+
+<http://localhost:3000/benchmarking/city0/parking> a dcat:Dataset;
+    dct:title "City 0 parking data.";
+    dct:description "Synthetic parking data for benchmarking porpouses.";
+    foaf:topic <http://localhost:3000/#P10>, <http://localhost:3000/#P07>;
+    dcat:distribution <http://localhost:3000/stream/poll>.
+<http://localhost:3000/stream/poll> a dcat:Distribution;
+    dct:title "Parking data poll.";
+    dct:description "Parking data poll description.";
+    dct:license <https://creativecommons.org/licenses/by/4.0>;
+    dcat:accessURL <http://localhost:3000/data>.
+<http://localhost:3000/benchmarking/city0/parking> dcat:distribution <http://localhost:3000/stream/websocket>.
+<http://localhost:3000/stream/websocket> a dcat:Distribution;
+    dct:title "Parking data stream.";
+    dct:description "Parking data stream description.";
+    dct:license <https://creativecommons.org/licenses/by/4.0>;
+    dcat:accessURL <ws://localhost:3001>.

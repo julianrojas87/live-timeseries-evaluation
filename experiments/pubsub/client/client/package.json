@@ -1,0 +1,27 @@
+{
+  "name": "linkedtimeseries-client",
+  "version": "0.0.1",
+  "description": "A client consuming RDF time series from the Web",
+  "main": "bin/client.js",
+  "scripts": {
+    "test": "node -c bin/client.js config-example.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.datasciencelab.ugent.be:4444/linkedtimeseries/client.git"
+  },
+  "keywords": [
+    "RSP",
+    "RDF",
+    "time",
+    "series"
+  ],
+  "author": "https://idlab.technology/#organization",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "ldfetch": "0.0.3",
+    "websocket-stream": "^5.1.1",
+    "ws": "^3.3.1"
+  }
+}

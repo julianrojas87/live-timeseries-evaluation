@@ -1,0 +1,23 @@
+{
+  "name": "replay-timeseries",
+  "version": "0.0.5",
+  "description": "Takes an RDF file of any kind (online or on disk) and replays it on standard ouput. Used for benchmarking purposes.",
+  "main": "replay-timeseries.js",
+  "bin": {
+    "replay-timeseries": "./bin/replay-timeseries.js"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "n3": "^0.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jrojasme@git.datasciencelab.ugent.be/linkedtimeseries/replay-timeseries.git"
+  },
+  "author": "Julian Rojas",
+  "license": "MIT"
+}

@@ -1,0 +1,33 @@
+{
+  "maxFileSize": 250000,
+  "outputDir": "out/data",
+  "staticData": "",
+  "entry": "",
+  "fragment": "/fragment",
+  "publishUrl": "http://192.168.0.111",
+  "httpPort": 3000,
+  "websocket": {
+    "port": 3001
+  },
+  "dataset": {
+    "id": "http://192.168.0.111/benchmarking/city0/parking",
+    "title": "City 0 parking data.",
+    "description": "Synthetic parking data for benchmarking porpouses.",
+    "topics": [
+      "http://192.168.0.111/#P10",
+      "http://192.168.0.111/#P07"
+    ]
+  },
+  "streams": [
+    {
+      "id": "http://192.168.0.111/stream/websocket",
+      "port": "3001",
+      "protocol": "ws",
+      "title": "Parking data stream.",
+      "description": "Parking data stream description.",
+      "license": "https://creativecommons.org/licenses/by/4.0",
+      "timesync": "http://192.168.0.111/timesync",
+      "accessUrl": "ws://192.168.0.111:3001"
+    }
+  ]
+}

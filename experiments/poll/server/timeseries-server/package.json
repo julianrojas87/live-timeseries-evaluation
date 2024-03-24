@@ -1,0 +1,27 @@
+{
+  "name": "timeseries-server",
+  "version": "1.0.0",
+  "description": "A server to host linked time series data as linked data fragments",
+  "main": "bin/timeseries-server.js",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-router": "^7.2.1",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.19.1",
+    "md5": "^2.2.1",
+    "n3": "^0.11.2",
+    "ws": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test-with-datagen": "node bin/stub_input.js | node bin/timeseries-server.js -c config.json",
+    "test-without-datagen": "node bin/timeseries-server.js -c config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.datasciencelab.ugent.be:4444/linkedtimeseries/timeseries-server.git"
+  },
+  "author": "http://idlab.technology/#organization",
+  "license": "MIT"
+}

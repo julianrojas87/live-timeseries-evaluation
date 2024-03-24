@@ -1,0 +1,20 @@
+{
+  "name": "docker-stats",
+  "version": "0.0.1",
+  "description": "Node application for writing Docker stats stream into a CSV file.",
+  "main": "bin/docker-stats.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.datasciencelab.ugent.be:4444/linkedtimeseries/docker-stats.git"
+  },
+  "author": "Julian Rojas",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.12.2",
+    "fast-csv": "^2.4.1",
+    "split": "^1.0.1"
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"maxFileSize": 250000,
+	"outputDir": "out/data",
+	"staticData": "",
+	"entry": "",
+	"fragment": "/fragment",
+	"publishUrl": "http://localhost:3000",
+	"httpPort": 3000,
+	"websocket": {
+		"port": 3001
+	},
+	"dataset": {
+		"id": "http://localhost:3000/benchmarking/city0/parking",
+		"title": "City 0 parking data.",
+		"description": "Synthetic parking data for benchmarking porpouses.",
+		"topics": [
+			"http://localhost:3000/#P10",
+			"http://localhost:3000/#P07"
+		]
+	},
+	"streams": [
+		{
+			"id": "http://localhost:3000/stream/poll",
+			"port": "3000",
+			"protocol": "http",
+			"title": "Parking data poll.",
+			"description": "Parking data poll description.",
+			"license": "https://creativecommons.org/licenses/by/4.0",
+			"accessUrl": "http://localhost:3000/data"
+		},
+		{
+			"id": "http://localhost:3000/stream/websocket",
+			"port": "3001",
+			"protocol": "ws",
+			"title": "Parking data stream.",
+			"description": "Parking data stream description.",
+			"license": "https://creativecommons.org/licenses/by/4.0",
+			"accessUrl": "ws://localhost:3001"
+		}
+	]
+}

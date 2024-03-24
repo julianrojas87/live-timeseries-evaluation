@@ -1,20 +1,32 @@
-# Experiment: publishing 1 time series as Linked Data
+# Installation
 
-Research questions:
- * Cost-efficiency of different interfaces under increasing load: how many clients need to be connected to a pubsub system for it to work better in a pull based system? 
- * What’s the optimal amount of observations in a pull-based document?
+To install everything needed to run the experiments, run `./install.sh`.
+This will install the necessary client NPM modules and git submodules.
 
+# Running
 
-## 1. Testing - for different set-ups - the increase in possible reusers until 100%?
+There are 2 experiments, pubsub and poll. Poll sets up a simple HTTP server and
+connects different amounts of clients to it, to see the impact on server and client
+performance. Pubsub does the same but with a websockets interface, and has a similar
+interface.
 
-Can we assume that when you would increase RAM + CPU of a server, the number of possible clients scales linearly with it?
+To run an experiment, simply run the `experiment.sh` file in the appropriate folder:
 
-Should we quantify how much RAM+CPU we marginally/amortized would need for 1 request for a certain data interface?
+```
+cd poll
+./experiment MIN MAX INCR TIME
+```
 
-## 2. Testing when pubsub is worse then poll
+This example instantiates a poll server and connects MIN clients to it for TIME seconds.
+After TIME seconds, these clients are killed, and MIN + INCR clients are created and
+connected. This repeats itself until the amount of clients is MAX.
 
-If number of users increase on the X axis, and Y axis is the latency, CPU time or RAM consumption and bandwidth. At what number of reusers would it be more cost-efficient to choose a polling approach?
+# Results
 
-* Depending on number of updates as well...
+Client stats are saved in `results/client` and server stats are saved in `results/server`
+in the experiment folder (e.g. `poll/results/client` and `poll/results/server`).
 
-## 3. With summaries, we increase performance of n° of documents
+## TODO
+
+- Server result file must be cleaned (header line is added every 3 seconds).
+- More configurable options (e.g. polling interval)
